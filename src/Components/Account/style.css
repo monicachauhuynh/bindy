@@ -1,0 +1,137 @@
+.account-form {
+  height: 650px;
+  width: 1160px;
+  border-radius: 20px;
+  background: #fffefe;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.title {
+  font-family: DM Sans;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 88px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #3e4347;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.wrapper {
+  padding: 30px 140px 72px;
+}
+
+.box {
+  width: 40%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.right-box {
+  width: 374px;
+}
+
+label {
+  font-family: DM Sans;
+  font-size: 22px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3e4347 !important;
+}
+
+input {
+  height: 36px;
+  min-width: 252px;
+  border-radius: 12px !important;
+  border: 1px solid #3e4347 !important;
+  font-size: 18px !important;
+}
+
+.select {
+  min-height: 36px !important;
+  padding: 8px 25px !important;
+  min-width: 197px;
+  border-radius: 12px !important;
+  border: 1px solid #3e4347 !important;
+  font-size: 18px !important;
+}
+
+.connect-btn {
+  height: 51px;
+  width: 374px;
+  border-radius: 25px;
+  border: 2px solid #3e4347;
+  font-family: DM Sans;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  text-align: center;
+  background-color: transparent;
+  align-self: center;
+}
+
+.connect-btn:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+.about-field {
+  height: 228px;
+  border-radius: 5px;
+  resize: none !important;
+  border: 1px solid #3e4347 !important;
+  font-family: DM Sans;
+  font-size: 18px !important;
+  font-weight: 400;
+  line-height: 88px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.keywords-input {
+  border-radius: 5px;
+  border: 1px solid #3e4347 !important;
+}
+
+*::placeholder {
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3e4347 !important;
+}
+
+.divider.default.text {
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3e4347 !important;
+}
+
+.ui.toggle.checkbox input:checked ~ .box:before,
+.ui.toggle.checkbox input:checked ~ label:before {
+  background: linear-gradient(180deg, #c4b5f9 0%, #caf4ed 90.1%) !important;
+}
+
+.inline.field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
