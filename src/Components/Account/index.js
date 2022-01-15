@@ -64,8 +64,10 @@ const Account = () => {
       <div className="heading">
         <div className="title">Edit Profile</div>
         <div className="button-container">
-          <Button onClick={handleSubmit}>SAVE</Button>
-          <Button>EXIT</Button>
+          <Button className="save-btn" onClick={handleSubmit}>
+            SAVE
+          </Button>
+          <Button className="exit-btn">EXIT</Button>
         </div>
       </div>
       <Form className="account-form">

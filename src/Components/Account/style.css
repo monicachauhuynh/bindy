@@ -135,3 +135,41 @@ input {
   justify-content: space-between;
   align-items: center;
 }
+
+.save-btn {
+  width: 176px;
+  border-radius: 5px;
+  font-family: DM Sans;
+  font-size: 20px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  letter-spacing: 0em;
+  text-align: center !important;
+  color: #fffefe !important;
+  background: #3e4347 !important;
+}
+
+.save-btn:hover {
+  background: #adecc1 !important;
+  color: #3e4347 !important;
+  border: 2px solid #3e4347 !important;
+}
+
+.exit-btn {
+  width: 176px;
+  border-radius: 5px;
+  background: #fffefe !important;
+  border: 2px solid #3e4347 !important;
+  font-family: DM Sans;
+  font-size: 20px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #3e4347 !important;
+}
+
+.exit-btn:hover {
+  background: #cf666f !important;
+  color: #3e4347 !important;
+}
