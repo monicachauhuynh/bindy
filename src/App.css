@@ -5,11 +5,11 @@
   flex-direction: column;
 }
 
-.header {
+.navbar {
   min-height: 40px;
   width: 100%;
-  background: #3E4347;
-  color: #C4B5F9;
+  background: #3e4347;
+  color: #c4b5f9;
 }
 
 .main {
