@@ -1,17 +1,25 @@
-import React from "react";
-import {
-  Form,
-  Input,
-  Grid,
-  Button,
-  Select,
-  Segment,
-  Label,
-} from "semantic-ui-react";
+import React, { useCallback, useState } from "react";
+import { Form, Input, Grid, Select } from "semantic-ui-react";
+import SliderView from "semantic-ui-react-slider";
 import "./style.css";
 import { genderOptions, interestOptions } from "../Account/constants";
 
 const Signup = () => {
+  const [minAge, setMinAge] = useState(18);
+  const [maxAge, setMaxAge] = useState(130);
+  const [minDistance, setMinDistance] = useState(0);
+  const [maxDistance, setMaxDistance] = useState(100);
+
+  const onSliderAgeRangeChange = useCallback((minAge, maxAge) => {
+    setMinAge(minAge);
+    setMaxAge(maxAge);
+  }, []);
+
+  const onSliderDistanceChange = useCallback((minDistance, maxDistance) => {
+    setMinAge(minDistance);
+    setMaxAge(maxDistance);
+  }, []);
+
   return (
     <div className="signup-wrapper">
       <div className="signup-heading">
@@ -45,6 +53,26 @@ const Signup = () => {
                 options={interestOptions}
                 placeholder="Everyone"
                 id="interest"
+              />
+            </Form.Field>
+
+            <Form.Field>
+              <label>Max Distance</label>
+              <SliderView
+                className="signup-slider"
+                onSliderValuesChange={onSliderDistanceChange}
+                sliderMinValue={0}
+                sliderMaxValue={100}
+              />
+            </Form.Field>
+
+            <Form.Field>
+              <label>Age Range</label>
+              <SliderView
+                className="signup-slider"
+                onSliderValuesChange={onSliderAgeRangeChange}
+                sliderMinValue={18}
+                sliderMaxValue={130}
               />
             </Form.Field>
 
