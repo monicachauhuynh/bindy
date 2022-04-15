@@ -76,7 +76,7 @@ const Signup = () => {
               <Select
                 className="select"
                 options={genderOptions}
-                placeholder="Gender"
+                placeholder="Male"
                 id="gender"
               />
             </Form.Field>

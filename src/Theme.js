@@ -1,7 +1,7 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
 
-const theme = {
+export const theme = {
     colors: {
         lightPurple: "#C4B5F9",
         darkPurple: "8B5CB4",
