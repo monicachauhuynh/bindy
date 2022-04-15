@@ -1,0 +1,514 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders Sign up 1`] = `
+<div
+  style={
+    Object {
+      "marginLeft": "140px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "marginBottom": "40px",
+      }
+    }
+  >
+    <h1
+      className="sc-bdvvtL bpnWpV"
+    >
+      Sign Up
+    </h1>
+  </div>
+  <div
+    className="ui container grid"
+  >
+    <form
+      className="ui form sc-gsDKAQ eHpZrV"
+      onSubmit={[Function]}
+    >
+      <div
+        className="seven wide computer sixteen wide mobile eight wide tablet column"
+      >
+        <div
+          className="inline field"
+        >
+          <label>
+            Username
+          </label>
+          <div
+            className="ui input"
+          >
+            <input
+              id="username"
+              onChange={[Function]}
+              type="text"
+            />
+          </div>
+        </div>
+        <div
+          className="inline field"
+        >
+          <label>
+            D. O. B
+          </label>
+          <div
+            className="ui input"
+            date={true}
+          >
+            <input
+              id="dateOfBirth"
+              onChange={[Function]}
+              type="text"
+            />
+          </div>
+        </div>
+        <div
+          className="inline field"
+        >
+          <label>
+            Gender
+          </label>
+          <div
+            aria-expanded={false}
+            className="ui selection dropdown select"
+            id="gender"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onMouseDown={[Function]}
+            role="listbox"
+            tabIndex={0}
+          >
+            <div
+              aria-atomic={true}
+              aria-live="polite"
+              className="divider default text"
+              role="alert"
+            >
+              Male
+            </div>
+            <i
+              aria-hidden="true"
+              className="dropdown icon"
+              onClick={[Function]}
+            />
+            <div
+              className="menu transition"
+            >
+              <div
+                aria-checked={false}
+                aria-selected={true}
+                className="selected item"
+                onClick={[Function]}
+                role="option"
+                style={
+                  Object {
+                    "pointerEvents": "all",
+                  }
+                }
+              >
+                <span
+                  className="text"
+                >
+                  Male
+                </span>
+              </div>
+              <div
+                aria-checked={false}
+                aria-selected={false}
+                className="item"
+                onClick={[Function]}
+                role="option"
+                style={
+                  Object {
+                    "pointerEvents": "all",
+                  }
+                }
+              >
+                <span
+                  className="text"
+                >
+                  Female
+                </span>
+              </div>
+              <div
+                aria-checked={false}
+                aria-selected={false}
+                className="item"
+                onClick={[Function]}
+                role="option"
+                style={
+                  Object {
+                    "pointerEvents": "all",
+                  }
+                }
+              >
+                <span
+                  className="text"
+                >
+                  Other
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="inline field"
+        >
+          <label>
+            Interest
+          </label>
+          <div
+            aria-expanded={false}
+            className="ui selection dropdown select"
+            id="interest"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onMouseDown={[Function]}
+            role="listbox"
+            tabIndex={0}
+          >
+            <div
+              aria-atomic={true}
+              aria-live="polite"
+              className="divider default text"
+              role="alert"
+            >
+              Everyone
+            </div>
+            <i
+              aria-hidden="true"
+              className="dropdown icon"
+              onClick={[Function]}
+            />
+            <div
+              className="menu transition"
+            >
+              <div
+                aria-checked={false}
+                aria-selected={true}
+                className="selected item"
+                onClick={[Function]}
+                role="option"
+                style={
+                  Object {
+                    "pointerEvents": "all",
+                  }
+                }
+              >
+                <span
+                  className="text"
+                >
+                  Male
+                </span>
+              </div>
+              <div
+                aria-checked={false}
+                aria-selected={false}
+                className="item"
+                onClick={[Function]}
+                role="option"
+                style={
+                  Object {
+                    "pointerEvents": "all",
+                  }
+                }
+              >
+                <span
+                  className="text"
+                >
+                  Female
+                </span>
+              </div>
+              <div
+                aria-checked={false}
+                aria-selected={false}
+                className="item"
+                onClick={[Function]}
+                role="option"
+                style={
+                  Object {
+                    "pointerEvents": "all",
+                  }
+                }
+              >
+                <span
+                  className="text"
+                >
+                  Everyone
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="field"
+        >
+          <label>
+            Max Distance
+          </label>
+          <div
+            className="signup-slider"
+            style={
+              Object {
+                "flexBasis": "calc(100% - 20px)",
+                "height": "45px",
+                "marginLeft": "10px",
+                "marginRight": "10px",
+                "position": "relative",
+              }
+            }
+          >
+            <div
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "rgb(150, 150, 150)",
+                  "borderRadius": "5px",
+                  "height": "10px",
+                  "marginTop": "18px",
+                  "position": "absolute",
+                  "width": "100%",
+                }
+              }
+            />
+            <div
+              className="slider-handles"
+            >
+              <div
+                onKeyDown={[Function]}
+                onMouseDown={[Function]}
+                onTouchStart={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "#2185d0",
+                    "borderRadius": "50%",
+                    "color": "#333",
+                    "cursor": "pointer",
+                    "height": "20px",
+                    "left": "0%",
+                    "marginLeft": "-10px",
+                    "marginTop": "12px",
+                    "position": "absolute",
+                    "textAlign": "center",
+                    "width": "20px",
+                    "zIndex": 2,
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "fontSize": "14px",
+                      "marginTop": "-20px",
+                    }
+                  }
+                >
+                  0
+                </div>
+              </div>
+              <div
+                onKeyDown={[Function]}
+                onMouseDown={[Function]}
+                onTouchStart={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "#2185d0",
+                    "borderRadius": "50%",
+                    "color": "#333",
+                    "cursor": "pointer",
+                    "height": "20px",
+                    "left": "100%",
+                    "marginLeft": "-10px",
+                    "marginTop": "12px",
+                    "position": "absolute",
+                    "textAlign": "center",
+                    "width": "20px",
+                    "zIndex": 2,
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "fontSize": "14px",
+                      "marginTop": "-20px",
+                    }
+                  }
+                >
+                  100
+                </div>
+              </div>
+            </div>
+            <div
+              className="slider-tracks"
+            >
+              <div
+                onMouseDown={[Function]}
+                onTouchStart={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "#2185d0",
+                    "borderRadius": 5,
+                    "cursor": "pointer",
+                    "height": "10px",
+                    "left": "0%",
+                    "marginTop": "18px",
+                    "position": "absolute",
+                    "width": "100%",
+                    "zIndex": 1,
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="field"
+        >
+          <label>
+            Age Range
+          </label>
+          <div
+            className="signup-slider"
+            style={
+              Object {
+                "flexBasis": "calc(100% - 20px)",
+                "height": "45px",
+                "marginLeft": "10px",
+                "marginRight": "10px",
+                "position": "relative",
+              }
+            }
+          >
+            <div
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "rgb(150, 150, 150)",
+                  "borderRadius": "5px",
+                  "height": "10px",
+                  "marginTop": "18px",
+                  "position": "absolute",
+                  "width": "100%",
+                }
+              }
+            />
+            <div
+              className="slider-handles"
+            >
+              <div
+                onKeyDown={[Function]}
+                onMouseDown={[Function]}
+                onTouchStart={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "#2185d0",
+                    "borderRadius": "50%",
+                    "color": "#333",
+                    "cursor": "pointer",
+                    "height": "20px",
+                    "left": "0%",
+                    "marginLeft": "-10px",
+                    "marginTop": "12px",
+                    "position": "absolute",
+                    "textAlign": "center",
+                    "width": "20px",
+                    "zIndex": 2,
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "fontSize": "14px",
+                      "marginTop": "-20px",
+                    }
+                  }
+                >
+                  18
+                </div>
+              </div>
+              <div
+                onKeyDown={[Function]}
+                onMouseDown={[Function]}
+                onTouchStart={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "#2185d0",
+                    "borderRadius": "50%",
+                    "color": "#333",
+                    "cursor": "pointer",
+                    "height": "20px",
+                    "left": "100%",
+                    "marginLeft": "-10px",
+                    "marginTop": "12px",
+                    "position": "absolute",
+                    "textAlign": "center",
+                    "width": "20px",
+                    "zIndex": 2,
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "fontSize": "14px",
+                      "marginTop": "-20px",
+                    }
+                  }
+                >
+                  130
+                </div>
+              </div>
+            </div>
+            <div
+              className="slider-tracks"
+            >
+              <div
+                onMouseDown={[Function]}
+                onTouchStart={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "#2185d0",
+                    "borderRadius": 5,
+                    "cursor": "pointer",
+                    "height": "10px",
+                    "left": "0%",
+                    "marginTop": "18px",
+                    "position": "absolute",
+                    "width": "100%",
+                    "zIndex": 1,
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui grid"
+        >
+          <div
+            className="center aligned column"
+          >
+            <button
+              className="sc-dkPtRN gFvYMU"
+            >
+              SIGN UP
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+`;
