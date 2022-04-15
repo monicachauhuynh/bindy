@@ -42,6 +42,24 @@ exports[`Renders Sign up 1`] = `
           >
             <input
               id="username"
+              name="username"
+              onChange={[Function]}
+              type="text"
+            />
+          </div>
+        </div>
+        <div
+          className="inline field"
+        >
+          <label>
+            Name
+          </label>
+          <div
+            className="ui input"
+          >
+            <input
+              id="name"
+              name="name"
               onChange={[Function]}
               type="text"
             />
@@ -55,10 +73,10 @@ exports[`Renders Sign up 1`] = `
           </label>
           <div
             className="ui input"
-            date={true}
           >
             <input
-              id="dateOfBirth"
+              id="dob"
+              name="dob"
               onChange={[Function]}
               type="text"
             />
@@ -74,6 +92,7 @@ exports[`Renders Sign up 1`] = `
             aria-expanded={false}
             className="ui selection dropdown select"
             id="gender"
+            name="gender"
             onBlur={[Function]}
             onChange={[Function]}
             onClick={[Function]}
@@ -166,6 +185,7 @@ exports[`Renders Sign up 1`] = `
             aria-expanded={false}
             className="ui selection dropdown select"
             id="interest"
+            name="interest"
             onBlur={[Function]}
             onChange={[Function]}
             onClick={[Function]}
@@ -467,7 +487,7 @@ exports[`Renders Sign up 1`] = `
                     }
                   }
                 >
-                  130
+                  100
                 </div>
               </div>
             </div>
