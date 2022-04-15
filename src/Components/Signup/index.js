@@ -37,23 +37,54 @@ const SignupButton = styled.button`
   border: transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 40px;
-`
+`;
 
 const Signup = () => {
   const [minAge, setMinAge] = useState(18);
-  const [maxAge, setMaxAge] = useState(130);
+  const [maxAge, setMaxAge] = useState(100);
   const [minDistance, setMinDistance] = useState(0);
   const [maxDistance, setMaxDistance] = useState(100);
+
+  const [formData, setFormData] = useState({});
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log(formData);
+   const requestOptions = {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    };
+    fetch("http://localhost:5000/user", requestOptions).then((response) =>
+      response.json()
+    );
+  };
 
   const onSliderAgeRangeChange = useCallback((minAge, maxAge) => {
     setMinAge(minAge);
     setMaxAge(maxAge);
+    setFormData({
+      ...formData,
+      ageRange: minAge.toString() + maxAge.toString(),
+    });
   }, []);
 
   const onSliderDistanceChange = useCallback((minDistance, maxDistance) => {
-    setMinAge(minDistance);
-    setMaxAge(maxDistance);
+    setMinDistance(minDistance);
+    setMaxDistance(maxDistance);
+    setFormData({
+      ...formData,
+      maxDistance: maxDistance.toString(),
+    });
   }, []);
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
 
   return (
     <div style={{ marginLeft: "140px" }}>
@@ -61,15 +92,34 @@ const Signup = () => {
         <Title>Sign Up</Title>
       </div>
       <Grid container>
-        <SignupForm>
+        <SignupForm onSubmit={handleSubmit}>
           <Grid.Column mobile={16} tablet={8} computer={7}>
             <Form.Field inline>
               <label>Username</label>
-              <Input id="username" />
+              <Input
+                id="username"
+                name="username"
+                value={formData.username}
+                onChange={handleInputChange}
+              />
+            </Form.Field>
+            <Form.Field inline>
+              <label>Name</label>
+              <Input
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleInputChange}
+              />
             </Form.Field>
             <Form.Field inline>
               <label>D. O. B</label>
-              <Input date id="dateOfBirth" />
+              <Input
+                id="dob"
+                name="dob"
+                value={formData.dob}
+                onChange={handleInputChange}
+              />
             </Form.Field>
             <Form.Field inline>
               <label>Gender</label>
@@ -78,6 +128,13 @@ const Signup = () => {
                 options={genderOptions}
                 placeholder="Male"
                 id="gender"
+                name="gender"
+                onChange={(e, { value }) =>
+                  setFormData({
+                    ...formData,
+                    gender: value?.toString(),
+                  })
+                }
               />
             </Form.Field>
 
@@ -88,6 +145,13 @@ const Signup = () => {
                 options={interestOptions}
                 placeholder="Everyone"
                 id="interest"
+                name="interest"
+                onChange={(e, { value }) =>
+                  setFormData({
+                    ...formData,
+                    interest: value?.toString(),
+                  })
+                }
               />
             </Form.Field>
 
@@ -107,7 +171,7 @@ const Signup = () => {
                 className="signup-slider"
                 onSliderValuesChange={onSliderAgeRangeChange}
                 sliderMinValue={18}
-                sliderMaxValue={130}
+                sliderMaxValue={100}
               />
             </Form.Field>
 
