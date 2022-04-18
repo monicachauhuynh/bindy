@@ -1,8 +1,14 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import React from "react";
+import renderer from "react-test-renderer";
+import { Signup } from "./Components";
+import { theme } from "./Theme";
+import { ThemeProvider } from "styled-components";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test("Renders Sign up", () => {
+  const tree = renderer.create(
+    <ThemeProvider theme={theme}>
+      <Signup />
+    </ThemeProvider>
+  );
+  expect(tree).toMatchSnapshot();
 });
