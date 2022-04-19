@@ -7,14 +7,13 @@ export default function VoiceChat() {
   return (
     <Container>
       <Box>
-        <Carousel>
+        <Carousel controls={true}>
           <Carousel.Item>
-            {/* <img
+            <img
               className="d-block w-100"
               src="holder.js/800x400?text=First slide&bg=373940"
               alt="First slide"
-            /> */}
-            <p>fhdsakkl</p>
+            />
 
             <Carousel.Caption>
               <h3>First slide label</h3>
