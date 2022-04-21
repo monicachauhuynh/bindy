@@ -1,54 +1,67 @@
-import React from "react";
-import { Box } from "./style";
+import React, { useState } from "react";
+import {
+  Box,
+  Slider,
+  SliderTab,
+  ButtonContainer,
+  SButton,
+  CallerPanel,
+  CallerAvatar,
+  CallerName,
+} from "./style";
 import { Container } from "semantic-ui-react";
-import Carousel from "react-bootstrap/Carousel";
+import { Icon } from "semantic-ui-react";
+
+import "react-awesome-slider/dist/styles.css";
+import { questions } from "./constants";
 
 export default function VoiceChat() {
+  const [currentIndex, setCurrentIndex] = useState(1);
+
+  const onTransitionRequest = (props) => {
+    console.log("pressed", props.nextIndex);
+    setCurrentIndex(props.nextIndex + 1);
+  };
+
   return (
     <Container>
       <Box>
-        <Carousel controls={true}>
-          <Carousel.Item>
+        <SliderTab>Question {currentIndex}/36</SliderTab>
+        <Slider bullets={false} onTransitionRequest={onTransitionRequest}>
+          {questions &&
+            questions.map((question) => (
+              <div key={question.key} className="question">
+                {question.value}
+              </div>
+            ))}
+        </Slider>
+        <ButtonContainer>
+          <SButton icon>
+            <Icon size="big" name="microphone" />
+          </SButton>
+          <SButton icon red>
+            <Icon size="big" name="phone" />
+          </SButton>
+          <SButton icon>
+            <Icon size="big" name="volume up" />
+          </SButton>
+        </ButtonContainer>
+        <CallerPanel>
+          <CallerAvatar active>
             <img
-              className="d-block w-100"
-              src="holder.js/800x400?text=First slide&bg=373940"
-              alt="First slide"
+              src="https://i.pinimg.com/originals/03/e0/1e/03e01e6734540f36f9494af40fd599d9.png"
+              alt=""
             />
-
-            <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            {/* <img
-              className="d-block w-100"
-              src="holder.js/800x400?text=Second slide&bg=282c34"
-              alt="Second slide"
-            /> */}
-            <p>fhdsakkl</p>
-
-            <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            {/* <img
-              className="d-block w-100"
-              src="holder.js/800x400?text=Third slide&bg=20232a"
-              alt="Third slide"
-            /> */}
-            <p>fhdsakkl</p>
-
-            <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
-            </Carousel.Caption>
-          </Carousel.Item>
-        </Carousel>
+            <CallerName>Anonymous Donut (You)</CallerName>
+          </CallerAvatar>
+          <CallerAvatar>
+            <img
+              src="https://www.nicepng.com/png/detail/37-374645_cupcake-cliparts-transparent-baking-clipart-transparent-background.png"
+              alt=""
+            />
+            <CallerName>Anonymous Cotton Candy</CallerName>
+          </CallerAvatar>
+        </CallerPanel>
       </Box>
     </Container>
   );

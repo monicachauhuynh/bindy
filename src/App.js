@@ -8,7 +8,7 @@ import {
   Messages,
   Questions,
   Match,
-  Signin
+  Signin,
 } from "./Components";
 import VoiceChat from "./Components/Questions/components/VoiceChat";
 import "./App.css";
@@ -23,8 +23,8 @@ function App() {
             <Header />
           </div>
           <main className="main">
-           <div className="gradient-eclipse-1"></div>
-          <div className="gradient-eclipse-2"></div>
+            <div className="gradient-eclipse-1"></div>
+            <div className="gradient-eclipse-2"></div>
             <Routes>
               <Route path="/signup" element={<Signup />} />
               <Route path="/signin" element={<Signin />} />
@@ -32,6 +32,7 @@ function App() {
               <Route path="/home" element={<Home />} />
               <Route path="/messages" element={<Messages />} />
               <Route path="/questions" element={<Questions />} />
+              <Route path="/questions/call" element={<VoiceChat />} />
               <Route path="/match" element={<Match />} />
             </Routes>
           </main>

@@ -2,6 +2,7 @@ import React from "react";
 import { Box } from "./style";
 import { Container, Button, Header } from "semantic-ui-react";
 import { ReactComponent as QuizImg } from "../../Assets/quiz_img.svg";
+import { Link } from "react-router-dom";
 
 const Questions = () => {
   return (
@@ -16,7 +17,9 @@ const Questions = () => {
           nullam ut suscipit.
         </p>
         <QuizImg />
-        <Button className="start-btn">START</Button>
+        <Link to="/questions/call">
+          <Button className="start-btn">START</Button>
+        </Link>
       </Box>
     </Container>
   );
