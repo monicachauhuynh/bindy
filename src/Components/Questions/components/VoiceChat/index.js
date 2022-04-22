@@ -9,6 +9,7 @@ import {
   CallerAvatar,
   CallerName,
 } from "./style";
+import PopupModal from "../PopupModal";
 import { Container } from "semantic-ui-react";
 import { Icon } from "semantic-ui-react";
 
@@ -39,9 +40,14 @@ export default function VoiceChat() {
           <SButton icon>
             <Icon size="big" name="microphone" />
           </SButton>
-          <SButton icon red>
-            <Icon size="big" name="phone" />
-          </SButton>
+          <PopupModal
+            closeButton={
+              <SButton icon red>
+                <Icon size="big" name="phone" />
+              </SButton>
+            }
+          ></PopupModal>
+
           <SButton icon>
             <Icon size="big" name="volume up" />
           </SButton>

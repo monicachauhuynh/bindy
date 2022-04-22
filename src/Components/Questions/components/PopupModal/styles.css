@@ -1,0 +1,44 @@
+@media screen and (max-width: 767px) {
+  .ui.modal.transition.visible.active {
+    width: 80% !important;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .ui.modal.transition.visible.active {
+    width: 100% !important;
+  }
+}
+
+.ui.modal.transition.visible.active {
+  height: 350px;
+  width: 750px;
+  background: #47435e;
+  padding: 56px;
+  color: #fffefe !important;
+  border-radius: 25px;
+}
+
+.actions {
+  border-top: none !important;
+  background: #47435e !important;
+}
+
+.ui.header {
+  font-family: DM Sans;
+  font-size: 32px !important;
+  font-weight: 700;
+  line-height: 51px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.subtitle {
+  font-family: DM Sans;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 54px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #b0afaf;
+}
