@@ -9,7 +9,7 @@ import {
   CallerAvatar,
   CallerName,
 } from "./style";
-import PopupModal from "../PopupModal";
+import PopupModal from "../PopupModal";
 import { Container } from "semantic-ui-react";
 import { Icon } from "semantic-ui-react";
 
