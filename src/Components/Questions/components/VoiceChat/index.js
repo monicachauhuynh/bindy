@@ -20,7 +20,6 @@ export default function VoiceChat() {
   const [currentIndex, setCurrentIndex] = useState(1);
 
   const onTransitionRequest = (props) => {
-    console.log("pressed", props.nextIndex);
     setCurrentIndex(props.nextIndex + 1);
   };
 

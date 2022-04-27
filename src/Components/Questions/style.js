@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 export const Box = styled.div`
-  /* height: 657px;
-  width: 1160px; */
   background: rgba(158, 146, 193, 0.4);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
@@ -18,9 +16,9 @@ export const Box = styled.div`
     position: absolute;
     top: -50px;
     opacity: 0.95;
-    border: 3px solid #766771;
+    border: 3px solid ${(props) => props.theme.colors.darkGray};
     box-shadow: 4px 4px 4px 0px #0000001a;
-    background: #fffefe;
+    background: #fff;
     z-index: 999;
 
     font-family: DM Sans;

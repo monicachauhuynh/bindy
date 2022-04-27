@@ -36,7 +36,7 @@ export const Slider = styled(AwesomeSlider)`
 
   .question {
     width: 75%;
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 600;
   }
 `;
@@ -53,8 +53,8 @@ export const SliderTab = styled.div`
   letter-spacing: 0em;
   text-align: center;
   color: #fff;
-  padding: 23px 10px;
-  width: 280px;
+  padding: 23px 20px;
+  /* width: 280px; */
   position: absolute;
   top: 30px;
   left: 270px;
