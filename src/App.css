@@ -26,4 +26,44 @@
   align-items: center;
   align-content: center;
   justify-content: center;
+  background: #fff;
+  position: static;
+}
+
+.gradient-eclipse-1 {
+  position: absolute;
+  width: 1254px;
+  height: 800px;
+  left: -303px;
+  top: -78px;
+
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(196, 181, 249, 0.3) 0%,
+    rgba(196, 181, 249, 0) 100%
+  );
+}
+
+.gradient-eclipse-2 {
+  position: absolute;
+  width: 1437px;
+  height: 650px;
+  left: 264px;
+  top: 102px;
+
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(202, 244, 237, 0.5) 0%,
+    rgba(202, 244, 237, 0) 97.4%
+  );
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  flex-grow: 1;
+  z-index: 100;
 }
