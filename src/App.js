@@ -8,8 +8,9 @@ import {
   Messages,
   Questions,
   Match,
-  Signin
+  Signin,
 } from "./Components";
+import VoiceChat from "./Components/Questions/components/VoiceChat";
 import "./App.css";
 import Theme from "./Theme";
 
@@ -22,14 +23,19 @@ function App() {
             <Header />
           </div>
           <main className="main">
+            <div className="gradient-eclipse-1"></div>
+            <div className="gradient-eclipse-2"></div>
             <Routes>
-              <Route path="/signup" element={<Signup />} />
-              <Route path="/signin" element={<Signin />} />
-              <Route path="/account" element={<Account />} />
-              <Route path="/home" element={<Home />} />
-              <Route path="/messages" element={<Messages />} />
-              <Route path="/questions" element={<Questions />} />
-              <Route path="/match" element={<Match />} />
+              <Route path="signup" element={<Signup />} />
+              <Route path="signin" element={<Signin />} />
+              <Route path="account" element={<Account />} />
+              <Route path="home" element={<Home />} />
+              <Route path="messages" element={<Messages />} />
+              <Route path="questions">
+                <Route path="" element={<Questions />} />
+                <Route path="call" element={<VoiceChat />} />
+              </Route>
+              <Route path="match" element={<Match />} />
             </Routes>
           </main>
         </div>

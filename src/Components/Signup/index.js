@@ -11,7 +11,7 @@ const Title = styled.h1`
   font-weight: 700;
   line-height: 88px;
   letter-spacing: 0em;
-  color: ${props => props.theme.colors.darkGray};
+  color: ${(props) => props.theme.colors.darkGray};
 `;
 
 const SignupForm = styled(Form)({
@@ -33,7 +33,7 @@ const SignupButton = styled.button`
   font-weight: 700;
   text-align: center;
   align-self: center;
-  background: ${props => props.theme.linearGradient};
+  background: ${(props) => props.theme.linearGradient};
   border: transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 40px;
@@ -50,7 +50,7 @@ const Signup = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(formData);
-   const requestOptions = {
+    const requestOptions = {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
