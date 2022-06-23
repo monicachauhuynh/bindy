@@ -6,28 +6,33 @@ export const Box = styled.div`
   border-radius: 20px;
   display: flex;
   padding: 90px;
+  padding-top: 150px;
   flex-direction: column;
   align-items: center;
   position: relative;
-  margin-top: 80px;
+  margin-top: 100px;
 
   .box-title {
     border-radius: 15px;
     position: absolute;
-    top: -50px;
+    top: -5px;
+    left: 100px;
+    height: 140px;
     opacity: 0.95;
     border: 3px solid ${(props) => props.theme.colors.darkGray};
     box-shadow: 4px 4px 4px 0px #0000001a;
     background: #fff;
-    z-index: 999;
-
+    z-index: 2;
     font-family: DM Sans;
     font-size: 72px !important;
     font-style: normal;
     font-weight: 700;
     text-align: center;
-    padding: 20px 60px;
+    padding: 20px 60px !important;
     width: 80%;
+    line-height: 88px;
+    
+
   }
 
   p {
