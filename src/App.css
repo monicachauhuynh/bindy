@@ -27,7 +27,11 @@
   align-content: center;
   justify-content: center;
   background: #fff;
+<<<<<<< HEAD
   position: relative;
+=======
+  position: static;
+>>>>>>> b9f621bb3855dfc7248ae3e48f9943a5aef2c204
 }
 
 .gradient-eclipse-1 {
@@ -56,4 +60,17 @@
     rgba(202, 244, 237, 0.5) 0%,
     rgba(202, 244, 237, 0) 97.4%
   );
+<<<<<<< HEAD
+=======
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  flex-grow: 1;
+  z-index: 100;
+>>>>>>> b9f621bb3855dfc7248ae3e48f9943a5aef2c204
 }

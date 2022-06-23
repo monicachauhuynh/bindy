@@ -10,6 +10,7 @@ import {
   Match,
   Signin,
 } from "./Components";
+import Ranking from "./Components/Ranking";
 import VoiceChat from "./Components/Questions/components/VoiceChat";
 import "./App.css";
 import Theme from "./Theme";
@@ -36,6 +37,7 @@ function App() {
                 <Route path="call" element={<VoiceChat />} />
               </Route>
               <Route path="match" element={<Match />} />
+              <Route path="rank" element={<Ranking />} />
             </Routes>
           </main>
         </div>
