@@ -1,4 +1,14 @@
 import styled from "styled-components";
+
+
+export const Header = styled.div`
+  margin-top: 70px;
+
+  h1 {
+    position: sticky;
+  }
+`;
+
 export const DoneButton = styled.div`
   width: 193px;
   border-radius: 5px;
@@ -25,6 +35,6 @@ export const Footer = styled.div`
 `;
 
 export const CardList = styled.div`
-  height: 75vh;
+  height: 70vh;
   overflow-y: scroll;
 `;

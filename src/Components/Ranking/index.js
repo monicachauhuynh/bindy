@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { DoneButton, Footer, CardList } from "./style";
-import { Container, Header } from "semantic-ui-react";
+import { DoneButton, Footer, CardList, Header } from "./style";
+import { Container } from "semantic-ui-react";
 import MatchCard from "./components/MatchCard";
 
 const mockData = [
@@ -27,8 +27,8 @@ const Questions = () => {
   };
 
   return (
-    <Container>
-      <Header>Select the matches that you want to keep in contact </Header>
+    <Header>
+      <h1>Select the matches that you want to keep in contact </h1>
       <hr />
       <CardList>
         {mockData &&
@@ -47,7 +47,7 @@ const Questions = () => {
         </h1>
         <DoneButton>DONE</DoneButton>
       </Footer>
-    </Container>
+    </Header>
   );
 };
 

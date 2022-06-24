@@ -67,4 +67,5 @@ export const SCheckBox = styled.input`
   accent-color: #3d1779;
   transform: scale(2);
   min-width: 36px !important;
+  margin-right: 50px;
 `;
